@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Robert Antony</title>
+    <link
+      id="favicon"
+      rel="shortcut icon"
+      href="./assets/images/tabicon.png"
+      type="image/x-png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courgette&family=Madimi+One&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courgette&family=Madimi+One&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/CSS/style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <div class="navbar">
+        <p class="text1">Memories</p>
+        <p></p>
+        <a href="http://robertantony.me" target="_blank" class="text3"
+          >Portfolio</a
+        >
+      </div>
+      <div class="main-page1">
+        <div>
+          <p class="title1">Hello Guys👋</p>
+          <h1 class="para1">
+            This is <span class="stext">Robert Antony</span>, you may or may not
+            know me..!
+            <br />
+            I am creating this page to tell you what i have to tell, the whole
+            purpose of this page is to convey a few words, which i may not able
+            to tell you because of a situation..!
+          </h1>
+          <br />
+          <a href="#second-page" class="btn1">Explore</a>
+        </div>
+        <div>
+          <img
+            src="assets/images/Businessman using a laptop.gif"
+            class="img1"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <div class="page" id="second-page">
+      <div class="top-title">
+        <p>Here you Can Get your Comment Exclusivly written by Robert Antony</p>
+      </div>
+      <div class="container2">
+        <div>
+          <h2 class="title2">Get your Comment</h2>
+          <p class="title3">
+            Enter your Full Name, <br />or Nick Name <br />(only you and me
+            know)
+          </p>
+          <p class="special-content">
+            This is special note for everyone and written from deep down heart
+          </p>
+          <input
+            type="text"
+            id="wordInput"
+            placeholder="Enter your Name here"
+            class="input1"
+          />
+          <br />
+          <br />
+          <button href="#" class="btn2" onclick="lookupWord()">Comment</button>
+        </div>
+        <div><p id="definition" class="output-content"></p></div>
+      </div>
+    </div>
+    <div class="page">
+      <div class="container3">
+        <p class="para2">
+          And Here is a form if you want to share something to me
+        </p>
+      </div>
+      <div class="container4">
+        <div></div>
+        <div class="form">
+          <p class="title4">Drop a comment if you like..!</p>
+          <form
+            action="https://formspree.io/f/xzbnapgo"
+            method="post"
+            class="form-cont"
+          >
+            <p class="input-con">
+              <span class="input-lab">Name :</span><br /><input
+                class="input-box"
+                name="name"
+                type="text"
+                required
+              />
+            </p>
+            <p class="input-con">
+              <span class="input-lab">Comment :</span><br /><input
+                class="input-box"
+                type="text"
+                name="comment"
+                required
+              />
+            </p>
+            <p class="input-con">
+              <span class="input-lab">Anything you want me to change :</span
+              ><br /><input
+                class="input-box"
+                type="text"
+                name="thing to change"
+              />
+            </p>
+            <input type="submit"   class="btn3"></input>
+          </form>
+        </div>
+        <div></div>
+      </div>
+    </div> 
+  </body>
+  <script src="assets/Javascript/scripts.js"></script>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyDlG0KPQ242VyePcy5QfoXNW44QplxY_dc",
+      authDomain: "robert-memories.firebaseapp.com",
+      projectId: "robert-memories",
+      storageBucket: "robert-memories.appspot.com",
+      messagingSenderId: "960278595338",
+      appId: "1:960278595338:web:4d31578d283f5a1d111cf3",
+      measurementId: "G-QK2Q5ENY2W"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+</html>
